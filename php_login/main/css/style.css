@@ -1,0 +1,61 @@
+body {
+    max-width: 1140px;
+    margin:100px 0 0 100px;
+}
+
+.input_width {
+    max-width: 720px;
+}
+
+.back {
+    display: flex;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.policy{
+    margin: 20px auto;
+    text-align:center;
+}
+.submit_btnarea {
+    width: 360px;
+    margin: 0 auto;
+}
+.form_btn{
+    background: #005183;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    position: relative;
+}
+ 
+/* .form_btn:hover{
+    border: 1px solid #005183;
+    background: #fff;
+    color: #005183;
+}
+button[type="submit"][disabled] {
+            background-color: #fff;
+            color: #ccc;
+            border-color: #ccc;
+            cursor: default;
+        } */
+     
+button[type="submit"][disabled]:hover{
+        opacity:1;
+}
