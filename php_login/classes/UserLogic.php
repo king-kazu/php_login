@@ -18,6 +18,11 @@ class UserLogic
 
     try {
       $stmt = connect()->prepare($sql);
+      
+      $stmt->bindValue(1 , $name, PDO:: PARAM_STR);
+      $stmt->bindValue(2, $email, PDO:: PARAM_STR);
+      $stmt->bindValue(3, $password, PDO:: PARAM_STR);
+
       $result = $stmt->execute($arr);
       return $result;
     } catch(\Exception $e) { //バックスラッシュをつけるとすべてのExceptionをcatchする（グローバルなnamespaceを指定）
